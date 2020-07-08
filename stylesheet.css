@@ -260,11 +260,6 @@ animation-iteration-count: infinite;
 	#title-text-skypath {
 	  font-size: 3.5rem;
 	}
-	
-
-	
-
-	
 
 	.intro-text { /*paragraphs at beginning of service section and intro sections */
 	  text-align: left;
@@ -273,27 +268,22 @@ animation-iteration-count: infinite;
 	  font-weight: 500;
 	  color: #2b353a;
 	}
-	
 
 	.add-padding {
 	  padding: 0 2rem 0 2rem;
 	}
-	
 
 	#astrology-introduction {
 	  padding: 0 2rem 0 2rem;
 	}
-	
 
 	.left-align {
 	  text-align: left;
 	}
-	
 
 	.square-list {
 	  list-style: square;
 	}
-	
 
 	.service-details-list {
 	  font-family: 'source sans pro';
@@ -321,7 +311,10 @@ animation-iteration-count: infinite;
 	  align-content: center;
 	  justify-content: center;
 	  height: auto;
+	margin-left: 0;
+	margin-right: 0;
 	}
+
 	#services-container {
 	  width: 100vw;
 	  justify-content: center;
