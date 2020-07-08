@@ -112,6 +112,15 @@ body {
 	  color: white;
 	  font-size: 250%;
 	}
+
+.sub-contact-title-text { /*for title on contact page*/
+  font-family: 'source sans pro';
+  font-weight: 300;
+  color: white;
+  font-size: 250%;
+}
+
+
 	.subtitle-text {
 	  animation-name: reveal;
 	  animation-duration: 2s;
@@ -171,6 +180,27 @@ body {
 	  animation-fill-mode: forwards;
 	  animation-iteration-count: infinite;
 	}
+
+#contact-hero-section-container {
+  display: flex;
+  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  align-items: center;
+  background-position: 0% 0%;
+  background-attachment: fixed;
+  height: auto;
+  min-height: 30vh;
+  animation-name: background;
+  animation-duration: 60s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+
+
+
 	@keyframes background {
 	  0% {
 	    background-position: 0% 50%;
@@ -214,6 +244,15 @@ body {
 
 	.heading-text { 
 	}
+
+#contact-astrology-services-text {
+  font-size: 2.7rem;
+}
+
+#contact-title-text-skypath {
+  font-size: 3.2rem;
+}
+
 	
 
 	#astrology-services-text {
