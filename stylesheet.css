@@ -1,10 +1,14 @@
-body {
-	  font-family: 'source sans pro';
-	  font-size: 100%;
-	  padding: 0;
-	  margin: 0;
-	  background-color: white;
-	  width: 100vw;
+
+.media:hover { /*NEW*/
+  filter: opacity(50%);
+}
+
+     body {
+	font-family: 'source sans pro';
+	font-size: 100%;
+	padding: 0;
+	background-color: white;
+	width: 100vw;
 	}
 
 	header {
@@ -175,7 +179,7 @@ body {
 	  animation-iteration-count: infinite;
 	}
 
-#contact-hero-section-container {
+.small-hero-section-container { /*NEW*/
 	display: flex;
 background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
 padding: 0;
@@ -217,9 +221,15 @@ padding: 2rem;
 
 	.section {
 	  min-height: 100vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
 	}
+
+.section-no-padding { /*NEW*/
+  min-height: 100vh;
+  margin-left: 0;
+	margin-right: 0;
+}
 	
 
 	h2 {
@@ -255,7 +265,6 @@ padding: 2rem;
 
 	#astrology-services-text {
 	}
-	
 
 	#title-text-skypath {
 	  font-size: 3.5rem;
@@ -311,8 +320,6 @@ padding: 2rem;
 	  align-content: center;
 	  justify-content: center;
 	  height: auto;
-	margin-left: 0;
-	margin-right: 0;
 	}
 
 	#services-container {
@@ -323,7 +330,7 @@ padding: 2rem;
 	  flex-direction: row;
 	  wrap-direction: wrap;
 	  padding: 5rem 0 5rem 0;
-	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1584554881/portrait-clouds_f06k2l_hue1_irsxpp.jpg");
+	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1594250446/beach-photo-edit_ztjn3m.png");
 	  background-attachment: fixed;
 	  background-size: cover;
 	}
@@ -391,8 +398,7 @@ padding: 2rem;
 	  place-self: center;
 	  border-radius: 10px;
 	}
-	:hover #john-bio-photo {
-	}
+	
 	#about-section-container {
 	  display: flex;
 	  width: 100vw;
@@ -456,24 +462,36 @@ padding: 2rem;
 	     background-position: 100% 90%;
 	  }
 	}
-	#contact-page-link {
-	  display: block;
-	  margin: auto auto 4rem auto;
+
+.button {
+   display: block;
+    font-family: 'source sans pro';
+    margin: auto auto 4rem auto;
 	  text-align: center;
-	  background: #F8F7F3;
-	  font-family: 'source sans pro';
-	  border-style: double;
-	  border-color: black;
-	  border-width: 5px;
-	  border-radius: 5px;
+	  background: black;
+    filter: opacity(50%);
 	  padding: 1rem 2rem 1rem 2rem;
 	  width: 280px;
-	  font-size: 1.2rem;
-	  font-weight: 700;
-	  letter-spacing: 0.5pt;
-	  text-transform: uppercase;
-	  color: black;
+    border-style: solid;
+	  border-color: black;
+	  border-width: 1px;
+	  border-radius: 5px;
+}
+
+.button:hover {
+	border-color: white;
+}
+
+.button-text {
+  color: white;
+  font-size: 1.2rem;
+	letter-spacing: 0.5pt;
+	text-transform: uppercase;
+}
+
+	#appointment-button {
 	}
+
 	#contact-page-link:hover {
 	  color: black;
 	  background: #D8C0A8;
@@ -491,7 +509,6 @@ padding: 2rem;
 	  margin-bottom: 1rem;
 	}
 	
-
 	.social-media-icons:hover {
 	 filter: opacity(50%);
 	}
@@ -509,47 +526,30 @@ padding: 2rem;
 	   margin-right: auto;
 	}
 	
-
-	.social-media-icons {
-	  padding-top: 0.625rem;
+#instagram-icon, #blog-icon {
+    padding-top: 0.625rem;
 	  width: 3rem;
 	  height: auto;
 	  font-size: 90%;
 	  border-style: none;
-	}
+}
 	
-
-	.link {
+	.link, .button {
 	  text-decoration: none;
 	  color: inherit;
 	  font-weight: 500;
 	}
-	.footer-list-item {
+	.white-small-text { /*NEW - replaces .social-media-text */
 	  color: white;
 	  text-transform: uppercase;
 	  letter-spacing: 0.5pt;
 	}
-	
 
-	#insta-link:hover {
-	  color: #D8C0A8;
-	  border-bottom: solid;
-	  border-width: 1px;
-	  border-radius: 2px;
-	}
-	#blog-link:hover {
-	  color: #D8C0A8;
-	  border-bottom: solid;
-	  border-width: 1px;
-	  border-radius: 2px;
-	}
-	
-
-	.social-media-name:visited {
-	  text-decoration: none;
-	  color: inherit;
-	}
-	
+  .black-small-text { /*NEW - replaces .social-media-text */
+  color: black;
+	  text-transform: uppercase;
+	  letter-spacing: 0.5pt;
+}
 
 	#footer-container {
 	 display: flex;
@@ -558,9 +558,6 @@ padding: 2rem;
 	 filter: opacity(50%);
 	 margin-top: 2rem;
 	}
-	
-
-	
 
 	footer {
 	  display: grid;
