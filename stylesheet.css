@@ -92,7 +92,7 @@ body {
 	    filter: opacity(100%);
 	  }
 	}
-	#title-text-container {
+	.title-text-container {
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
@@ -116,6 +116,7 @@ body {
   font-weight: 300;
   color: white;
   font-size: 3.2rem;
+  animation-name: none;
 }
 	.subtitle-text {
 	  animation-name: reveal;
