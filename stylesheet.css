@@ -111,23 +111,18 @@ body {
 	  font-size: 250%;
 	}
 
-#sub-contact-title-text { /*for title on contact page*/
+#contact-title-text-skypath { /*for title on contact page*/
   font-family: 'source sans pro';
   font-weight: 300;
   color: white;
-  font-size: 250%;
+  font-size: 3.2rem;
 }
-
-
 	.subtitle-text {
 	  animation-name: reveal;
 	  animation-duration: 2s;
 	  animation-fill-mode: forwards;
 	}
 	
-
-	
-
 	#title-grid {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr 1fr;
@@ -246,12 +241,6 @@ animation-iteration-count: infinite;
 #contact-astrology-services-text {
   font-size: 2.7rem;
 }
-
-#contact-title-text-skypath {
-  font-size: 3.2rem;
-}
-
-	
 
 	#astrology-services-text {
 	}
