@@ -192,6 +192,16 @@ animation-fill-mode: forwards;
 animation-iteration-count: infinite;
 }
 
+#contact-title-text-container {
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+margin-top: auto;
+margin-bottom: auto;
+padding: 2rem;
+	}
+
 
 
 
