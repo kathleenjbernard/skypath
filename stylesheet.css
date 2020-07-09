@@ -162,8 +162,18 @@
 	  animation-name: reveal;
 	  animation-duration: 8s;
 	}
-.hero-section-container {
-	  display: flex;
+
+@keyframes background {
+	  0% {
+	    background-position: 0% 0%;
+	  }
+	  100% {
+	    background-position: 50% 80%;
+	  }
+	}
+
+#main-page-hero-container {
+	display: flex;
 	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
 	  padding: 0;
 	  margin: 0;
@@ -177,7 +187,7 @@
 	  animation-duration: 60s;
 	  animation-fill-mode: forwards;
 	  animation-iteration-count: infinite;
-	}
+}
 
 .small-hero-section-container { /*NEW*/
 	display: flex;
@@ -206,17 +216,6 @@ margin-bottom: auto;
 padding: 2rem;
 	}
 
-
-
-
-	@keyframes background {
-	  0% {
-	    background-position: 0% 0%;
-	  }
-	  100% {
-	    background-position: 50% 80%;
-	  }
-	}
 	
 
 	.section {
