@@ -1,14 +1,17 @@
 
+
 .media:hover { /*NEW*/
   filter: opacity(50%);
 }
 
-     body {
-	font-family: 'source sans pro';
-	font-size: 100%;
-	padding: 0;
-	background-color: white;
-	width: 100vw;
+
+body {
+	  font-family: 'source sans pro';
+	  font-size: 100%;
+	  padding: 0;
+	  margin: 0;
+	  background-color: white;
+	  width: 100vw;
 	}
 
 	header {
@@ -162,18 +165,8 @@
 	  animation-name: reveal;
 	  animation-duration: 8s;
 	}
-
-@keyframes background {
-	  0% {
-	    background-position: 0% 0%;
-	  }
-	  100% {
-	    background-position: 50% 80%;
-	  }
-	}
-
-#main-page-hero-container {
-	display: flex;
+.hero-section-container {
+	  display: flex;
 	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
 	  padding: 0;
 	  margin: 0;
@@ -187,7 +180,7 @@
 	  animation-duration: 60s;
 	  animation-fill-mode: forwards;
 	  animation-iteration-count: infinite;
-}
+	}
 
 .small-hero-section-container { /*NEW*/
 	display: flex;
@@ -216,6 +209,17 @@ margin-bottom: auto;
 padding: 2rem;
 	}
 
+
+
+
+	@keyframes background {
+	  0% {
+	    background-position: 0% 50%;
+	  }
+	  100% {
+	    background-position: 50% 80%;
+	  }
+	}
 	
 
 	.section {
@@ -390,42 +394,50 @@ padding: 2rem;
 	}
 	
 
-	
+	/***********************************************/
 
-	#john-bio-photo {
-	  margin-left: 1rem;
-	  place-self: center;
-	  border-radius: 10px;
-	}
-	
 	#about-section-container {
 	  display: flex;
 	  width: 100vw;
-	  min-height: 60vh;
 	  height: auto;
 	  background-color: #F8F7F3;
-	  padding: 5rem 0 5rem 0;
+	  padding: 0 0 0 0;
 	}
-	.inner-left-container {
+	#photo-container {
 	  display: grid;
-	  grid-template-columns: 1fr;
-	  grid-template-rows: 20% 80%;
+	  grid-template-columns: 25vw;
+	  grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 1rem 1rem 1rem 1rem;
 	}
-	#about-heading-text {
-	  display: grid;
-	  margin: 0;
-	  padding-left: 1rem;
-	  align-self: center;
+
+#inner-container {
+  display: grid;
+  width: 60vw;
+}
+
+#about-heading-text {
+	align-self: center;
 	}
-	.image-resize {
-	  height: 300px;
-	  width: 300px;
+.image-resize {
+    height: auto;
+    width: 100%; /*100% of parent container*/
+    max-width: 300px;
 	}
+
+#bio-photo-1 {
+}
+#bio-photo-2 {
+}
+#bio-photo-3 {
+}
+#bio-photo-4 {
+}
+
 	.bio-text {
 	  min-width: 300px;
 	  text-align: left;
-	  margin-left: 3vw;
-	  margin-right: 5vw;
+	  margin-left: 1rem;
+	  margin-right: 1rem
 	  font-family: 'source sans pro';
 	  font-size: 1.1rem;
 	  font-weight: 500;
@@ -433,11 +445,12 @@ padding: 2rem;
 	}
 	#signature-image {
 	  height: 4rem;
-	  length: auto;
+	  width: auto;
 	  padding-left: 25vw;
-	  margin-bottom: 4rem;
 	}
 	
+
+
 
 	.footer-container-wrapper {
 	  display: flex;
@@ -634,9 +647,64 @@ padding: 2rem;
 	     body {
 		font-size: 100%;
 	}
-.nav-list-item {
-  display: none;
+
+nav {
+	  padding: 0;
+	  font-family: 'source sans pro'
+	  width: 99vw;
+	}
+
+	#nav-list {
+	  display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  text-decoration: none;
+	  list-style: none;
+	  color: white;
+	  text-align: center;
+	}
+	
+	.nav-list-item {
+	  text-transform: uppercase;
+	  letter-spacing: 0.5pt;  
+	}
+
+#services-link, #about-link, #contact-link, #blog-link, #back-link {
+	display: flex;
+	background-color: black;
+	filter: opacity(80%);
+	padding: 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+	border-style: solid;
+	border-color: #D8C0A8;
+	border-width: 2px;
+	border-radius: 5px;
+	justify-content: center;
+	}
+
+#title-grid {
+	display: none;
 }
+
+#title-text-skypath {
+
+}
+
+.title-text-container {
+	margin-top: 30vh;
+}
+
+#astrology-services-text {
+	font-size: 4rem;
+}
+
+.nav-list-home {
+  text-transform: uppercase;
+  padding-left: 3rem;
+  padding-right: 8pt;
+  letter-spacing: 0.5pt;
+}
+
 h2 {
   font-family: 'source sans pro';
   font-size: 2rem;
@@ -650,6 +718,40 @@ h2 {
   margin-left: 0;
   margin-right: 0;
 }
+
+#photo-container {
+  display: none;
+}
+
+.button {
+   display: block;
+    font-family: 'source sans pro';
+    margin: auto auto 4rem auto;
+	  text-align: center;
+	  background: black;
+    filter: opacity(50%);
+	  padding: 1rem 2rem 1rem 2rem;
+	  width: 60vw;
+    border-style: solid;
+	  border-color: black;
+	  border-width: 1px;
+	  border-radius: 5px;
+}
+
+#inner-container {
+  display: grid;
+  width: 100vw;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.column-3, .column-2, .column-1 {
+	  display: grid;
+	  justify-content: center;
+	  align-content: center;
+	  text-align: left;
+	  height: 15vh;
+	}
+
 }
 	
 
