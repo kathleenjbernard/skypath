@@ -211,7 +211,7 @@ padding: 2rem;
 
 	@keyframes background {
 	  0% {
-	    background-position: 0% 50%;
+	    background-position: 0% 0%;
 	  }
 	  100% {
 	    background-position: 50% 80%;
