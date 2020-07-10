@@ -352,14 +352,19 @@ padding: 2rem;
 	  border-color: black;
 	  border-width: 5px;
 	}
+
+	#service-1:hover {
+		background: silver;
+}
+	
 	#service-2:hover {
-	  background: #D8C0A8;
+	  background: silver;
 	}
 	#service-3:hover {
-	  background: #D8C0A8;
+	  background: silver;
 	}
 	#service-4:hover {
-	  background: #D8C0A8;
+	  background: silver;
 	}
 	.tile-intro {
 	  margin-left: 1rem;
