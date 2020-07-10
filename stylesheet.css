@@ -1,5 +1,3 @@
-
-
 .media:hover { /*NEW*/
   filter: opacity(50%);
 }
@@ -229,7 +227,6 @@ padding: 2rem;
 	}
 
 .section-no-padding { /*NEW*/
-  min-height: 100vh;
   margin-left: 0;
 	margin-right: 0;
 }
@@ -240,7 +237,7 @@ padding: 2rem;
 	  font-size: 4rem;
 	  font-weight: 300;
 	  color: #D8C0A8;
-	  align-self: flex-start;
+	  text-align: center;
 	}
 	
 
@@ -285,7 +282,11 @@ padding: 2rem;
 	  padding: 0 2rem 0 2rem;
 	}
 
-	#astrology-introduction {
+	#astrology-introduction, #services-intro-text {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  max-width: 900px;
 	  padding: 0 2rem 0 2rem;
 	}
 
@@ -397,36 +398,35 @@ padding: 2rem;
 	/***********************************************/
 
 	#about-section-container {
-	  display: flex;
-	  width: 100vw;
+	  display: grid;
+	  grid-template-columns: 1fr 2fr;
+	  grid-template-rows: auto;
+	  grid-gap: 1rem;
 	  height: auto;
 	  background-color: #F8F7F3;
-	  padding: 0 0 0 0;
+	  padding-left: 2rem;
+	  padding-right: 2rem;
 	}
 	#photo-container {
-	  display: grid;
-	  grid-template-columns: 25vw;
-	  grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 1rem 1rem 1rem 1rem;
+		justify-self: center;
+		align-self: start;
 	}
 
 #inner-container {
-  display: grid;
-  width: 60vw;
+	justify-self: center;
 }
 
-#about-heading-text {
-	align-self: center;
-	}
 .image-resize {
     height: auto;
     width: 100%; /*100% of parent container*/
     max-width: 300px;
 	}
 
-#bio-photo-1, #bio-photo-2, #bio-photo-3, #bio-photo-4:hover {
-	filter: opacity(50%);
-		}
+.photo-caption {
+	font-style: italic;
+	color: gray;
+	font-size: 95%;
+}
 
 #bio-photo-1 {
 }
@@ -437,20 +437,18 @@ padding: 2rem;
 #bio-photo-4 {
 }
 
-	.bio-text {
-	  min-width: 300px;
+#bio-text {
 	  text-align: left;
-	  margin-left: 1rem;
-	  margin-right: 1rem
 	  font-family: 'source sans pro';
-	  font-size: 1.1rem;
+	  font-size: 1rem;
 	  font-weight: 500;
 	  color: #2b353a;
+	  padding: 1rem;
 	}
 	#signature-image {
 	  height: 4rem;
 	  width: auto;
-	  padding-left: 0.5rem 0.5rem 0.5rem 25vw;
+	  padding: 0 0.5rem 0.5rem 25vw;
 	}
 	
 
@@ -742,11 +740,7 @@ h2 {
 	  border-radius: 5px;
 }
 
-#inner-container {
-  display: grid;
-  width: 100vw;
-  padding: 0 1rem 1rem 1rem;
-}
+
 
 .column-3, .column-2, .column-1 {
 	  display: grid;
@@ -756,6 +750,10 @@ h2 {
 	  height: 15vh;
 	}
 
+#about-section-container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+}
 }
 	
 
@@ -775,6 +773,17 @@ h2 {
 #photo-container {
   display: none;
 }
+
+#about-section-container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+}
+
+#small-about-title {
+	font-size: 2rem;
+}
+
+
 }
 	
 
@@ -785,9 +794,11 @@ h2 {
 	     body {
 		font-size: 100%;
 	}
-#bio-photo-4 {
+
+#small-about-title {
 	display: none;
 }
+
 }
 	
 
@@ -802,9 +813,13 @@ h2 {
 	}
 
      #astrology-introduction {
-	margin-left: 4rem;
-	margin-right: 4rem;
+
 	}
+
+#small-about-title {
+	display: none;
+}
+
 }
 	
 
@@ -814,61 +829,9 @@ h2 {
 	     body {
 		font-size: 100%;
 	}
-	#about-section-container {
-	  display: flex;
-	  width: 75vw;
-	  height: auto;
-	  background-color: #F8F7F3;
-	  padding: 0 0 0 0;
-	}
-	#photo-container {
-	  display: grid;
-	  grid-template-columns: 25vw 25vw;
-	  grid-template-rows: 1fr 1fr;
-    padding: 1rem 1rem 1rem 1rem;
-	}
 
-#inner-container {
-  display: grid;
-  width: 60vw;
+#small-about-title {
+	display: none;
 }
-
-#about-heading-text {
-	align-self: center;
-	}
-.image-resize {
-    height: auto;
-    width: 100%; /*100% of parent container*/
-    max-width: 300px;
-	}
-
-#bio-photo-1, #bio-photo-2, #bio-photo-3, #bio-photo-4 {
-	padding: 0.5rem;
-		}
-
-#bio-photo-1 {
-}
-#bio-photo-2 {
-}
-#bio-photo-3 {
-}
-#bio-photo-4 {
-}
-
-	.bio-text {
-	  max-width: 800px;
-	  text-align: left;
-	  margin-left: 1rem;
-	  margin-right: 1rem
-	  font-family: 'source sans pro';
-	  font-size: 1.1rem;
-	  font-weight: 500;
-	  color: #2b353a;
-	}
-	#signature-image {
-	  height: 4rem;
-	  width: auto;
-	  padding-left: 0.5rem 0.5rem 0.5rem 25vw;
-	}	
 		
 }
