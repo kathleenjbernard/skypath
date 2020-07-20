@@ -655,6 +655,26 @@ padding: 2rem;
 		font-size: 100%;
 	}
 
+
+		
+#blog-hero-section {
+	height: 100vh;
+	
+		}
+		
+#blog-title-text-container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 30vh;
+	margin-bottom: auto;
+	padding: 2rem;
+	}	
+		
+		
+		
+		
 nav {
 	  padding: 0;
 	  font-family: 'source sans pro'
@@ -744,16 +764,6 @@ h2 {
 	  border-width: 1px;
 	  border-radius: 5px;
 }
-
-
-
-.column-3, .column-2, .column-1 {
-	  display: grid;
-	  justify-content: center;
-	  align-content: center;
-	  text-align: left;
-	  height: 15vh;
-	}
 
 #about-section-container {
 	  display: grid;
