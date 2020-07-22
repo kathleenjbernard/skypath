@@ -2,6 +2,9 @@
   filter: opacity(50%);
 }
 
+#contact-astrology-introduction {
+
+}
 
 body {
 	  font-family: 'source sans pro';
@@ -56,35 +59,20 @@ body {
 #back-link {
 }
 	#services-link:hover {
-	  color: #D8C0A8;
-	  border-bottom: solid;
-	  border-width: 1px;
-	  border-radius: 2px;
+	text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan
 	}
 	#about-link:hover {
-	  color: #D8C0A8;
-	  border-bottom: solid;
-	  border-width: 1px;
-	  border-radius: 2px;
+	text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan;
 	}
 	#contact-link:hover {
-	  color: #D8C0A8;
-	  border-bottom: solid;
-	  border-width: 1px;
-	  border-radius: 2px;
+	text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan;  
 	}
 	#blog-link:hover {
-	  color: #D8C0A8;
-	  border-bottom: solid;
-	  border-width: 1px;
-	  border-radius: 2px;
+	text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan;
 	}
 
 #back-link:hover {
-  color: #D8C0A8;
-  border-bottom: solid;
-  border-width: 1px;
-  border-radius: 2px;
+	text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan;
 }
 	@keyframes reveal {
 	  0% {
@@ -98,22 +86,30 @@ body {
 	  }
 	}
 	.title-text-container {
-	  display: block;
+	  display: grid;
 	  margin-left: auto;
 	  margin-right: auto;
 	  text-align: center;
 	  margin-top: auto;
 	  margin-bottom: auto;
 	  padding: 2rem;
+	  max-width: 75vw;
+	  justify-content: center;
 	}
 	.title-text {
-	  animation-name: reveal;
-	  animation-duration: 2s;
-	  animation-fill-mode: forwards;
 	  font-family: 'source sans pro';
 	  font-weight: 300;
 	  color: white;
 	  font-size: 250%;
+	  animation-name: quick-reveal;
+	  animation-duration: 9s;
+	  animation-fill-mode: forwards;
+	}
+
+	@keyframes quick-reveal {
+		0% {filter: opacity(0%);}
+		75% {filter: opacity(0%);}
+		100% {filter: opacity(100%);}
 	}
 
 #contact-title-text-skypath { /*for title on contact page*/
@@ -122,35 +118,38 @@ body {
   color: white;
   font-size: 3.2rem;
   animation-name: none;
+  text-align: left;
 }
 	.subtitle-text {
+	  text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan;
 	  animation-name: reveal;
 	  animation-duration: 2s;
 	  animation-fill-mode: forwards;
+	  color: white;
 	}
 
 	#proverb-text {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		font-style: italic;
-		text-align: right;
-	
+		justify-self: end;
 	}
 	
 	#title-grid {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr 1fr;
-	  font-size: 1.3rem;
+	  font-size: 1.1rem;
 	  font-family: 'source sans pro';
 	  color: white;
 	  font-weight: 300;
-	  grid-gap: 0.5rem;
-	  justify-items: stretch;
+	  justify-content: center;
+	  justify-self: center;
 	  align-items: center;
 	  text-transform: uppercase;
+	  max-width: 50vw;
 	}
 	#cell-1 {
 	  animation-name: reveal;
-	  animation-duration: 4s;
+	  animation-duration: 6s;
 	  border-right: solid;
 	  padding-left: 5px;
 	  padding-right: 0.5rem;
@@ -158,7 +157,7 @@ body {
 	}
 	#cell-2 {
 	  animation-name: reveal;
-	  animation-duration: 6s;
+	  animation-duration: 8s;
 	  border-right: solid;
 	  padding-left: 5px;
 	  padding-right: 5px;
@@ -168,7 +167,7 @@ body {
 	  padding-left: 5px;
 	  padding-right: 5px;
 	  animation-name: reveal;
-	  animation-duration: 8s;
+	  animation-duration: 10s;
 	}
 .hero-section-container {
 	  display: flex;
@@ -197,7 +196,7 @@ align-items: center;
 background-position: 0% 0%;
 background-attachment: fixed;
 height: auto;
-min-height: 30vh;
+min-height: 50vh;
 animation-name: background;
 animation-duration: 60s;
 animation-fill-mode: forwards;
@@ -205,17 +204,18 @@ animation-iteration-count: infinite;
 }
 
 #contact-title-text-container {
-display: block;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-margin-top: auto;
-margin-bottom: auto;
-padding: 2rem;
+display: grid;
+grid-template-columns: 1fr 2fr;
+text-align: left;
+padding: 1rem;
+background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
+background-size: cover;
+background-position: 0% 0%;
+background-attachment: fixed;
+height: 25vh;
+width: 95vw;
+}
 	}
-
-
-
 
 	@keyframes background {
 	  0% {
@@ -226,7 +226,6 @@ padding: 2rem;
 	  }
 	}
 	
-
 	.section {
 	  min-height: 100vh;
     margin-left: 15vw;
@@ -238,7 +237,6 @@ padding: 2rem;
 	margin-right: 0;
 }
 	
-
 	h2 {
 	  font-family: 'source sans pro';
 	  font-size: 2.7rem;
@@ -247,7 +245,6 @@ padding: 2rem;
 	  text-align: center;
 	}
 	
-
 	h3 { /*headings on service tiles, questions in intro section, and contact button*/
 	  text-align: center;
 	  font-family: 'source sans pro';
@@ -256,15 +253,30 @@ padding: 2rem;
 	  letter-spacing: 0.5pt;
 	  text-transform: uppercase;
 	  color: black;
-	  padding-top: 0.1rem;
-	  padding-bottom: 0.1rem;
+	  padding-top: 0.2rem;
+	  padding-bottom: 0.2rem;
 	  margin-top: 0;
 	  margin-bottom: 0;
 	}
-	
 
-	.heading-text { 
-	}
+#astrology-intro-heading-text {
+	size: 200%;
+	font-family: 'source sans pro';
+	font-size: 4rem;
+	font-weight: 700;
+	color: #2b353a;
+	text-align: right;
+	height: 100%;
+	align-self: center;
+	padding: 1rem;
+
+}
+
+#astrology-can-list {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
 
 #contact-astrology-services-text {
   font-size: 2.7rem;
@@ -274,10 +286,9 @@ padding: 2rem;
 	  font-size: 3.5rem;
 	}
 
-	.intro-text { /*paragraphs at beginning of service section and intro sections */
+	.intro-text { /*paragraphs at beginning of service section and list on contact page */
 	  text-align: left;
 	  font-family: 'source sans pro';
-	  font-size: 1.1rem;
 	  font-weight: 500;
 	  color: #2b353a;
 	}
@@ -286,12 +297,35 @@ padding: 2rem;
 	  padding: 0 2rem 0 2rem;
 	}
 
-	#astrology-introduction, #services-intro-text {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  max-width: 900px;
-	  padding: 0 2rem 0 2rem;
+	main {
+		background-color: white;
+	}
+
+	#astrology-introduction {
+		display: block;
+		margin-top: 50vh;
+		margin-bottom: 35vh;
+		background-color: white;
+		max-width: 95vw;
+	}
+
+	#contact-astrology-introduction {
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		background-color: white;
+		max-width: 95vw;
+	}
+
+	#intro-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		justify-content: center;
+		align-content: space-around;
+		height: 50vh;
+		grid-gap: 1rem;
+		max-width: 95vw;
 	}
 
 	.left-align {
@@ -299,7 +333,13 @@ padding: 2rem;
 	}
 
 	.square-list {
-	  list-style: square;
+	list-style: upper-roman;
+	  line-height: 3rem;
+	  padding: 0 0 0 0.75rem;
+	}
+
+	.contact-list {
+		line-height: 1.1rem;
 	}
 
 	.service-details-list {
@@ -336,14 +376,24 @@ padding: 2rem;
 	  flex-wrap: wrap;
 	  display: flex;
 	  flex-direction: row;
-	  wrap-direction: wrap;
-	  padding: 5rem 0 5rem 0;
+	  padding: 10rem 0 10rem 0;
 	  background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1594250446/beach-photo-edit_ztjn3m.png");
 	  background-attachment: fixed;
 	  background-size: cover;
 	}
-	
 
+	#services-heading-text {
+		size: 4rem;
+		text-align: left;
+		color: #D8C0A8;
+	}
+
+	#contact-page-heading {
+		font-size: 4rem;
+		text-align: left;
+		color: #D8C0A8;
+	}
+	
 	.services-tile {
 	  display: grid;
 	  grid-template-rows: auto 10% 10% 45% auto;
@@ -357,19 +407,6 @@ padding: 2rem;
 	  border-width: 5px;
 	}
 
-	#service-1:hover {
-		background: silver;
-}
-	
-	#service-2:hover {
-	  background: silver;
-	}
-	#service-3:hover {
-	  background: silver;
-	}
-	#service-4:hover {
-	  background: silver;
-	}
 	.tile-intro {
 	  margin-left: 1rem;
 	  margin-right: 1rem;
@@ -406,6 +443,11 @@ padding: 2rem;
 
 	/***********************************************/
 
+	#about-heading-text {
+		text-align: left;
+		font-size: 3rem;
+	}
+
 	#about-section-container {
 	  display: grid;
 	  grid-template-columns: 1fr 2fr;
@@ -437,15 +479,6 @@ padding: 2rem;
 	font-size: 95%;
 }
 
-#bio-photo-1 {
-}
-#bio-photo-2 {
-}
-#bio-photo-3 {
-}
-#bio-photo-4 {
-}
-
 #bio-text {
 	  text-align: left;
 	  font-family: 'source sans pro';
@@ -462,6 +495,7 @@ padding: 2rem;
 	
 #small-about-title {
 	display: none;
+	text-align: left;
 }
 
 
@@ -490,25 +524,26 @@ padding: 2rem;
 
 .button {
    display: block;
-    font-family: 'source sans pro';
+	font-family: 'source sans pro';
     margin: auto auto 4rem auto;
 	  text-align: center;
-	  background: black;
+	  background: white;
     filter: opacity(50%);
 	  padding: 1rem 2rem 1rem 2rem;
 	  width: 280px;
     border-style: solid;
-	  border-color: black;
+	  border-color: white;
 	  border-width: 1px;
 	  border-radius: 5px;
 }
 
 .button:hover {
 	border-color: white;
+	filter: opacity(100%);
 }
 
 .button-text {
-  color: white;
+  color: black;
   font-size: 1.2rem;
 	letter-spacing: 0.5pt;
 	text-transform: uppercase;
@@ -582,15 +617,16 @@ padding: 2rem;
 	 background-color: black;
 	 filter: opacity(50%);
 	 margin-top: 2rem;
+	 justify-content: center;
 	}
 
 	footer {
 	  display: grid;
 	  grid-auto-flow: column;
-	  grid-gap: 1rem;
+	  grid-gap: 0.5rem;
 	  align-items: center;
-	  justify-content: space-around;
-	  width: 95vw;
+	  justify-content: center;
+	  width: 60vw;
 	  color: silver;
 	  grid-template-columns: 15vw 1fr 15vw;
 	  grid-template-rows: 1fr;
@@ -608,13 +644,6 @@ padding: 2rem;
 	  height: 15vh;
 	}
 	
-
-	.column-2 {
-	  border-right: solid;
-	  border-width: 1px;
-	}
-	
-
 	.column-3 {
 	  text-transform: uppercase;
 	  letter-spacing: 0.5pt;
@@ -658,28 +687,53 @@ padding: 2rem;
 	@media only screen
 	and (max-device-width: 480px) {
 	     body {
-		font-size: 100%;
+		font-size: 120%;
 	}
 
+	#intro-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+		align-content: space-around;
+		height: 100vh;
+		grid-gap: 1rem;
+		max-width: 95vw;
+	}
 
-		
+	#astrology-intro-heading-text {
+		font-family: 'source sans pro';
+		font-size: 3rem;
+		font-weight: 700;
+		color: #2b353a;
+		text-align: right;
+		align-self: center;
+		padding: 1rem;
+	
+	}
+
+	.square-list {
+		list-style: upper-roman;
+		  line-height: 2rem;
+		  padding: 0 0 0 0.75rem;
+		}
+
+		.contact-list {
+			line-height: 1.1rem;
+		}
+
 #blog-hero-section {
 	height: 100vh;
+	display: flex;
+	justify-content: center;
 	
 		}
 		
 #blog-title-text-container {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
 	text-align: center;
 	margin-top: 30vh;
-	margin-bottom: auto;
-	padding: 2rem;
 	}	
-		
-		
-		
 		
 nav {
 	  padding: 0;
@@ -689,6 +743,7 @@ nav {
 
 	#nav-list {
 	  display: flex;
+	  align-self: flex-start;
 	  flex-direction: column;
 	  flex-wrap: wrap;
 	  text-decoration: none;
@@ -704,7 +759,7 @@ nav {
 
 #services-link, #about-link, #contact-link, #blog-link, #back-link {
 	display: flex;
-	background-color: black;
+	background-color: none;
 	filter: opacity(80%);
 	padding: 1rem;
 	margin: 0.5rem 0 0.5rem 0;
@@ -714,7 +769,6 @@ nav {
 	border-radius: 5px;
 	justify-content: center;
 	}
-
 
 	.hero-section-container {
 		display: flex;
@@ -746,6 +800,16 @@ nav {
 	display: none;
 }
 
+.title-text {
+	font-family: 'source sans pro';
+	font-weight: 300;
+	color: white;
+	font-size: 250%;
+	animation-name: quick-reveal;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+  }
+
 #title-text-skypath {
 
 }
@@ -775,7 +839,6 @@ nav {
 
 h2 {
   font-family: 'source sans pro';
-  font-size: 2rem;
   font-weight: 300;
   color: #D8C0A8;
   align-self: flex-start;
@@ -794,14 +857,15 @@ h2 {
 .button {
    display: block;
     font-family: 'source sans pro';
-    margin: auto auto 4rem auto;
+	margin: auto auto 4rem auto;
+	color: transparent;
 	  text-align: center;
-	  background: black;
+	  background: white;
     filter: opacity(50%);
 	  padding: 1rem 2rem 1rem 2rem;
 	  width: 60vw;
     border-style: solid;
-	  border-color: black;
+	  border-color: white;
 	  border-width: 1px;
 	  border-radius: 5px;
 }
@@ -813,15 +877,17 @@ h2 {
 
 #small-about-title {
 	display: block;
+	text-align: left;
+	font-size: 3rem;
 }
 		
 footer {
 	  display: grid;
 	  grid-auto-flow: column;
-	  grid-gap: 1rem;
+	  grid-gap: 0.5rem;
 	  align-items: center;
 	  justify-content: space-around;
-	  width: 99vw;
+	  width: 100vw;
 	  color: silver;
 	  grid-template-columns: 1fr 1fr;
 	  grid-template-rows: 1fr;
@@ -833,7 +899,7 @@ footer {
 
 	.column-3, .column-2, .column-1 {
 	  display: grid;
-	  justify-content: center;
+	  justify-content: start;
 	  align-content: center;
 	  text-align: center;
 	  height: 15vh;
@@ -850,16 +916,58 @@ footer {
 	  text-transform: uppercase;
 	  letter-spacing: 0.5pt;
 	  font-weight: 500;		
-}
-	
+	}
+	}	
 
 	/******************S screen*******************/
 	@media only screen
-	And (min-device-width: 481px)
+	and (min-device-width: 481px)
 	and (max-device-width: 767px) {
-	     body {
-		font-size: 100%;
+		
+		body {
+		font-size: 110%;
 	}
+
+#intro-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 20vh 1fr;
+	align-content: center;
+	justify-content: center;
+	height: auto;
+	grid-gap: 1rem;
+	max-width: 75vw;
+	margin-left: 10vw;
+	}
+
+	#astrology-intro-heading-text {
+		font-family: 'source sans pro';
+		font-size: 3rem;
+		font-weight: 700;
+		color: #2b353a;
+		text-align: right;
+		align-self: center;
+		padding: 1rem;
+	}
+
+	#astrology-introduction {
+		display: block;
+		margin-top: 15vh;
+		margin-bottom: 15vh;
+		background-color: white;
+		max-width: 95vw;
+	}
+
+	.square-list {
+		list-style: upper-roman;
+		  line-height: 2rem;
+		  padding: 0 0 0 0.75rem;
+		}
+
+	.contact-list {
+		line-height: 1.2rem;
+	}
+
 .section {
   min-height: 100vh;
   margin-left: 0;
@@ -876,7 +984,9 @@ footer {
 }
 
 #small-about-title {
-	font-size: 2rem;
+	display: block;
+	font-size: 3rem;
+	text-align: left;
 }
 
 #astrology-services-text {
@@ -887,31 +997,101 @@ footer {
 	font-size: 1rem;
 	font-style: italic;
 	text-align: right;
-
 }
 
+#footer-container {
+	display: flex;
+	width: 100vw;
+	background-color: black;
+	filter: opacity(50%);
+	margin-top: 2rem;
+	justify-content: center;
+   }
+
+footer {
+	display: grid;
+	grid-auto-flow: column;
+	grid-gap: 1rem;
+	align-items: start;
+	justify-content: space-around;
+	width: 95vw;
+	color: silver;
+	grid-template-columns: 2fr 2fr 1fr;
+	font-size: 94%;
+	padding: 2rem 1rem 1rem 1rem;
+	line-height: 1.2;
+	text-align: center;
+  }
+
+  .column-3, .column-2, .column-1 {
+	display: grid;
+	justify-content: start;
+	align-content: center;
+	text-align: center;
+	height: 15vh;
+	padding: 1rem;
+  }
 
 }
 	
-
 	/******************M screen / iPad *******************/
 	@media only screen
 	And (min-device-width: 768px)
 	and (max-device-width: 990px) {
 	     body {
-		font-size: 100%;
-	}
+		font-size: 105%;
+		}
+		#astrology-introduction {
+			display: block;
+			margin-top: 30vh;
+			margin-bottom: 15vh;
+			background-color: white;
+			max-width: 95vw;
+		}
+	
+		#intro-grid {
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			grid-template-rows: 1fr;
+			justify-content: center;
+			align-content: space-around;
+			height: 50vh;
+			grid-gap: 1rem;
+			max-width: 95vw;
+		}
+	
+		.left-align {
+		  text-align: left;
+		}
+	
+		.square-list {
+		list-style: upper-roman;
+		  line-height: 2rem;
+		  padding: 0 0 0 0.75rem;
+		}
 
-#small-about-title {
-	display: none;
-}
+		.contact-list {
+			line-height: 1.2rem;
+		}
+	
+
+		#footer-container {
+			display: flex;
+			width: 100vw;
+			background-color: black;
+			filter: opacity(50%);
+			margin-top: 2rem;
+			justify-content: center;
+		   }
+
+		footer {
+			width: 85vw;
+		}
 
 }
 	
-
 	/******************L screen*******************/
 	
-
 	@media only screen
 	And (min-device-width: 991px)
 	and (max-device-width: 1199px) {
@@ -919,12 +1099,12 @@ footer {
 		font-size: 100%;
 	}
 
-     #astrology-introduction {
-
-	}
-
 #small-about-title {
 	display: none;
+}
+
+.contact-list {
+	line-height: 1.2rem;
 }
 
 }
@@ -937,8 +1117,8 @@ footer {
 		font-size: 100%;
 	}
 
-#small-about-title {
-	display: none;
-}
+	.contact-list {
+		line-height: 1.2rem;
+	}
 		
 }
