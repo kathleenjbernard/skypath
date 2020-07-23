@@ -207,13 +207,13 @@ animation-iteration-count: infinite;
 display: grid;
 grid-template-columns: 1fr 2fr;
 text-align: left;
-padding: 1rem;
+padding: 0 1rem 0 1rem;
 background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
 background-size: cover;
 background-position: 0% 0%;
 background-attachment: fixed;
 height: 25vh;
-width: 95vw;
+width: 100vw;
 }
 	}
 
@@ -388,9 +388,9 @@ width: 95vw;
 		color: #D8C0A8;
 	}
 
-	#contact-page-heading {
+	.page-heading {
 		font-size: 4rem;
-		text-align: left;
+		text-align: center;
 		color: #D8C0A8;
 	}
 	
@@ -723,16 +723,17 @@ width: 95vw;
 		}
 
 #blog-hero-section {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	
 		}
 		
 #blog-title-text-container {
-	display: flex;
+	display: grid;
+	margin: auto auto auto auto;
 	text-align: center;
 	margin-top: 30vh;
+	justify-content: center;
+	width: 30vw;
+	  text-align: center;
+	  padding: 2rem;
 	}	
 		
 nav {
