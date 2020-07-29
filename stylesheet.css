@@ -268,7 +268,6 @@ width: 100vw;
 	text-align: right;
 	height: 100%;
 	align-self: center;
-	padding: 15vh 0 0 0 0;
 
 }
 
@@ -307,8 +306,7 @@ width: 100vw;
 		margin-bottom: 30vh;
 		background-color: white;
 		max-width: 100%;
-		border-top: 1px solid #D8C0A8;
-		border-bottom: 1px solid #D8C0A8;
+		
 	}
 
 	#contact-astrology-introduction {
