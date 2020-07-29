@@ -680,29 +680,215 @@ width: 100vw;
 	and (max-device-width: 375px) {
 	     body {
 		font-size: 120%;
-		}
+	}
+
+	#intro-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+		align-content: space-around;
+		height: 100vh;
+		grid-gap: 1rem;
+		max-width: 95vw;
+	}
+
+	#astrology-intro-heading-text {
+		font-family: 'source sans pro';
+		font-size: 3rem;
+		font-weight: 700;
+		color: #2b353a;
+		text-align: right;
+		align-self: center;
+		padding: 1rem;
 	
-	.hero-section-container {
+	}
+
+	.square-list {
+		list-style: upper-roman;
+		  line-height: 2rem;
+		  padding: 0 0 0 0.75rem;
+		}
+
+		.contact-list {
+			line-height: 1.1rem;
+		}
+		
+#blog-title-text-container {
+	display: grid;
+	margin: auto auto auto auto;
+	text-align: center;
+	margin-top: 30vh;
+	justify-content: center;
+	width: 30vw;
+	  text-align: center;
+	  padding: 2rem;
+	}	
+		
+	#nav-list {
+	  display: flex;
+	  align-self: flex-start;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+	  text-decoration: none;
+	  list-style: none;
+	  color: white;
+	  text-align: center;
+	}
+	
+	.nav-list-item {
+	  text-transform: uppercase;
+	  letter-spacing: 0.5pt;  
+	}
+
+#services-link, #about-link, #contact-link, #blog-link, #back-link {
+	display: flex;
+	background-color: none;
+	filter: opacity(80%);
+	padding: 1rem;
+	margin: 0.5rem 0 0.5rem 0;
+	border-style: solid;
+	border-color: #D8C0A8;
+	border-width: 2px;
+	border-radius: 5px;
+	justify-content: center;
+	}
+
+.hero-section-container {
 		display: flex;
-		background-image: linear-gradient(black, #001a66);
+		background-image: linear-gradient(black, rgb(1, 1, 46), rgb(24, 1, 37));
 		padding: 0;
 		margin: 0;
-		background-size: contain 100%;
+		background-size: 100%;
 		align-items: center;
 		background-position: center;
 		background-attachment: fixed;
 		height: 100vh;
-		width: auto;		
-		}
+		width: 100%;	
+	  }
+
+#title-grid {
+	display: none;
 }
+
+.title-text {
+	font-family: 'source sans pro';
+	font-weight: 300;
+	color: white;
+	font-size: 250%;
+	animation-name: quick-reveal;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+  }
+
+.title-text-container {
+	margin-top: 30vh;
+}
+
+#astrology-services-text {
+	font-size: 1.7rem;
+	color: white;
+}
+
+#proverb-text {
+	font-size: 1rem;
+	font-style: italic;
+	text-align: right;
+
+}
+
+.nav-list-home {
+  text-transform: uppercase;
+  padding-left: 3rem;
+  padding-right: 8pt;
+  letter-spacing: 0.5pt;
+}
+
+h2 {
+  font-family: 'source sans pro';
+  font-weight: 300;
+  color: #D8C0A8;
+  align-self: flex-start;
+}
+
+.section {
+  min-height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#photo-container {
+  display: none;
+}
+
+.button {
+   display: block;
+    font-family: 'source sans pro';
+	margin: auto auto 4rem auto;
+	color: transparent;
+	  text-align: center;
+	  background: white;
+    filter: opacity(50%);
+	  padding: 1rem 2rem 1rem 2rem;
+	  width: 60vw;
+    border-style: solid;
+	  border-color: white;
+	  border-width: 1px;
+	  border-radius: 5px;
+}
+
+#about-section-container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+}
+
+#small-about-title {
+	display: block;
+	text-align: left;
+	font-size: 3rem;
+}
+		
+footer {
+	  display: grid;
+	  grid-auto-flow: column;
+	  grid-gap: 0.5rem;
+	  align-items: center;
+	  justify-content: space-around;
+	  width: 100vw;
+	  color: silver;
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: 1fr;
+	  font-size: 94%;
+	  padding: 2rem 1rem 1rem 1rem;
+	  line-height: 1.3;
+	}
 	
 
+	.column-3, .column-2, .column-1 {
+	  display: grid;
+	  justify-content: start;
+	  align-content: center;
+	  text-align: center;
+	  height: 15vh;
+	  padding: 5px;
+	}
 	
 
-	
+	.column-2 {
+		border-left: 1px solid white;
+	}
+
+	.column-3 {
+	  display: none;
+	  text-transform: uppercase;
+	  letter-spacing: 0.5pt;
+	  font-weight: 500;		
+	}
+	}
 
 	/******************XS screen*******************/
 	@media only screen
+	and (min-device-width: 376px)
 	and (max-device-width: 480px) {
 	     body {
 		font-size: 120%;
