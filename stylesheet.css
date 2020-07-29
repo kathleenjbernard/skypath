@@ -778,14 +778,11 @@ nav {
 		margin: 0;
 		background-size: contain 100%;
 		align-items: center;
-		background-position: 0% 0%;#astro
+		background-position: center;
 		background-attachment: fixed;
 		height: 100vh;
 		width: auto;
-		animation-name: background2;
-		animation-duration: 60s;
-		animation-fill-mode: forwards;
-		animation-iteration-count: infinite;
+		
 	  }
 
 	  @keyframes background2 {
