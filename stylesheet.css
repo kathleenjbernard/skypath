@@ -783,7 +783,7 @@ nav {
 		height: 100vh;
 		width: auto;
 		animation-name: background2;
-		animation-duration: 100s;
+		animation-duration: 60s;
 		animation-fill-mode: forwards;
 		
 	  }
