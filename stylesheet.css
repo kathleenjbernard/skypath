@@ -641,7 +641,7 @@ width: 100vw;
 	  justify-content: center;
 	  align-content: center;
 	  text-align: center;
-	  height: 15vh;
+	  height: 20vh;
 	}
 	
 	.column-3 {
@@ -904,8 +904,8 @@ footer {
 	  justify-content: start;
 	  align-content: center;
 	  text-align: center;
-	  height: 15vh;
-	  padding: 5px;
+	  height: 20vh;
+	  padding: 0.5rem 0 0.5rem;
 	}
 	
 
