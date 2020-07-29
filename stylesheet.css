@@ -832,6 +832,18 @@ h2 {
 #photo-container {
   display: none;
 }
+		
+#services-container {
+	  width: 100vw;
+	  justify-content: center;
+	  flex-wrap: wrap;
+	  display: flex;
+	  flex-direction: row;
+	  padding: 10rem 0 10rem 0;
+	  background-color: #e6e6ff;
+	  background-attachment: fixed;
+	  background-size: cover;
+	}
 
 .button {
    display: block;
@@ -859,6 +871,17 @@ h2 {
 	text-align: left;
 	font-size: 3rem;
 }
+
+.footer-container-wrapper {
+	  display: flex;
+	  justify-content: center;
+	  background-image: linear-gradient(black 0%, #6666ff 5%);
+	  background-size: 100%;
+	  background-position: center;
+	  background-attachment: fixed;
+	  height: auto;
+	  padding-top: 5rem;
+	}
 		
 footer {
 	  display: grid;
