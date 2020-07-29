@@ -681,6 +681,18 @@ width: 100vw;
 	     body {
 		font-size: 120%;
 	}
+	#contact-title-text-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	text-align: left;
+	padding: 0 1rem 0 1rem;
+	background-image: url("https://res.cloudinary.com/dsldlqqsb/image/upload/v1593474171/AdobeStock_301500590_pwksqo.jpg");
+	background-size: cover;
+	background-position: 0% 0%;
+	background-attachment: fixed;
+	height: 40vh;
+	width: 100vw;
+}
 
 	#intro-grid {
 		display: grid;
