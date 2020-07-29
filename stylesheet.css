@@ -768,7 +768,7 @@ width: 100vw;
 
 .hero-section-container {
 		display: flex;
-		background-image: linear-gradient(#232D76, black);
+		background-image: linear-gradient(black, #290066, #6666ff);
 		padding: 0;
 		margin: 0;
 		background-size: 100%;
