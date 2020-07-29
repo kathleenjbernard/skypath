@@ -768,14 +768,14 @@ width: 100vw;
 
 .hero-section-container {
 		display: flex;
-		background-image: linear-gradient(#3e2b3b, #273f8a);
+		background-image: linear-gradient(#273f8a, #3006A4);
 		padding: 0;
 		margin: 0;
 		background-size: 100%;
 		align-items: center;
 		background-position: center;
 		background-attachment: fixed;
-		height: 100vh;
+		height: 100%;
 		width: 100%;	
 	  }
 
