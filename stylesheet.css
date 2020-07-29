@@ -782,6 +782,9 @@ nav {
 		background-attachment: fixed;
 		height: 100vh;
 		width: auto;
+		animation-name: background2;
+		animation-duration: 100s;
+		animation-fill-mode: forwards;
 		
 	  }
 
