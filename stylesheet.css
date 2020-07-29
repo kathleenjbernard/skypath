@@ -675,8 +675,26 @@ width: 100vw;
 	}
 	
 
+	/*****************************XXS screen**************************/
+	@media only screen
+	and (max-device-width: 375px) {
+	     body {
+		font-size: 120%;
+		}
 	
-
+	.hero-section-container {
+		display: flex;
+		background-image: linear-gradient(black, #001a66);
+		padding: 0;
+		margin: 0;
+		background-size: contain 100%;
+		align-items: center;
+		background-position: center;
+		background-attachment: fixed;
+		height: 100vh;
+		width: auto;		
+		}
+}
 	
 
 	
