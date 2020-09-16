@@ -2,10 +2,6 @@
   filter: opacity(50%);
 }
 
-#contact-astrology-introduction {
-
-}
-
 body {
 	  font-family: 'source sans pro';
 	  font-size: 100%;
@@ -15,10 +11,7 @@ body {
 	  width: 100vw;
 	}
 
-	header {
-	}
-	
-	nav {
+nav {
 	  display: flex;
 	  position: absolute;
 	  flex-direction: row;
@@ -48,16 +41,13 @@ body {
 	  letter-spacing: 0.5pt;
 	}
 
-.nav-list-home {
-  text-transform: uppercase;
-  padding-left: 3rem;
-  padding-right: 8pt;
-  letter-spacing: 0.5pt;
-}
+	.nav-list-home {
+ 	 text-transform: uppercase;
+  	padding-left: 3rem;
+  	padding-right: 8pt;
+  	letter-spacing: 0.5pt;
+	}
 
-
-#back-link {
-}
 	#services-link:hover {
 	text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan
 	}
@@ -102,7 +92,7 @@ body {
 	  color: white;
 	  font-size: 250%;
 	  animation-name: quick-reveal;
-	  animation-duration: 9s;
+	  animation-duration: 11s;
 	  animation-fill-mode: forwards;
 	}
 
@@ -122,18 +112,23 @@ body {
 }
 	.subtitle-text {
 	  text-shadow: 3px 3px 10px #286DFF, -3px -3px 10px cyan;
-	  animation-name: reveal;
-	  animation-duration: 2s;
-	  animation-fill-mode: forwards;
 	  color: white;
+	  line-height: 0.9;
+	  margin-bottom: 0;
 	}
 
-	#proverb-text {
-		font-size: 1.5rem;
-		font-style: italic;
-		justify-self: end;
+	.subtitle-text#subtitle-first {
+		animation-name: reveal;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
 	}
-	
+
+	.subtitle-text#subtitle-second {
+		animation-name: reveal;
+		animation-duration: 6s;
+		animation-fill-mode: forwards;
+	}
+
 	#title-grid {
 	  display: grid;
 	  grid-template-columns: 1fr 1fr 1fr;
@@ -147,9 +142,9 @@ body {
 	  text-transform: uppercase;
 	  max-width: 50vw;
 	}
-	#cell-1 {
+	#cell-1 { /**not in use**/
 	  animation-name: reveal;
-	  animation-duration: 6s;
+	  animation-duration: 10s;
 	  border-right: solid;
 	  padding-left: 5px;
 	  padding-right: 0.5rem;
@@ -157,13 +152,12 @@ body {
 	}
 	#cell-2 {
 	  animation-name: reveal;
-	  animation-duration: 8s;
-	  border-right: solid;
+	  animation-duration: 9s;
 	  padding-left: 5px;
 	  padding-right: 5px;
 	  border-width: 1px;
 	}
-	#cell-3 {
+	#cell-3 { /**not in use**/
 	  padding-left: 5px;
 	  padding-right: 5px;
 	  animation-name: reveal;
@@ -283,7 +277,7 @@ width: 100vw;
 }
 
 	#title-text-skypath {
-	  font-size: 3.5rem;
+	  font-size: 5.5rem;
 	}
 
 	.intro-text { /*paragraphs at beginning of service section and list on contact page */
@@ -767,22 +761,17 @@ width: 100vw;
 		width: 100%;	
 	  }
 
-#title-grid {
-	display: none;
-}
 
 .title-text {
 	font-family: 'source sans pro';
 	font-weight: 300;
 	color: white;
 	font-size: 250%;
-	animation-name: quick-reveal;
-	animation-duration: 4s;
-	animation-fill-mode: forwards;
+	animation-name: none;
   }
 
 .title-text-container {
-	margin-top: 30vh;
+	margin-top: 20vh;
 }
 
 #astrology-services-text {
@@ -807,6 +796,7 @@ width: 100vw;
 h2 {
   font-family: 'source sans pro';
   font-weight: 300;
+  font-size: 180%;
   color: #D8C0A8;
   align-self: flex-start;
 }
@@ -1000,10 +990,6 @@ nav {
 		  background-position: 10% 20%;
 		}
 	  }
-
-#title-grid {
-	display: none;
-}
 
 .title-text {
 	font-family: 'source sans pro';
